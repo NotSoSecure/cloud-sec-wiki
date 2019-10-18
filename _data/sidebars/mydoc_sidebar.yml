@@ -1,0 +1,45 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Index
+  version: 
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+
+    - title: Get started
+      url: /index.html
+      output: web
+      type: homepage
+
+    - title: AWS Cloud
+      url: /aws_cloud.html
+      output: web
+    - title: Google Cloud
+      url: /google_cloud.html
+      output: web
+    - title: Azure Cloud
+      url: /azure_cloud.html
+      output: web
+
+    - title: Vulnerable Apps
+      url: /vulnerable_apps.html
+      output: web
+    - title: Kubernetes
+      url: /kubernetes.html
+      output: web
+    - title: Docker
+      url: /docker.html
+      output: web
+    - title: Hacking and Securing Cloud Infrastructure Training
+      url: http:\/\/www.notsosecure.com\/hacking-training\/cloud-hacking\/
+      output: web
+    
+
+
+
+
+  

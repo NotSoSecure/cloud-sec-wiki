@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+
+
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/aws_cloud.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/azure_cloud.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/docker.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/google_cloud.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/kubernetes.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/vulnerable_apps.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/assets/css/style.css</loc>
+  </url>
+  
+  
+</urlset>
