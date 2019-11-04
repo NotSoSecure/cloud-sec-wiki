@@ -22,3 +22,4 @@ folder: mydoc
 * [lambhack](https://github.com/wickett/lambhack): A very vulnerable serverless application in AWS Lambda
 * [honeyLambda](https://github.com/0x4D31/honeyLambda): honeyλ - a simple, serverless application designed to create and monitor fake HTTP endpoints (i.e. URL honeytokens) automatically, on top of AWS Lambda and Amazon API Gateway
 * [Honey Buckets – Find out who is snooping through your Amazon S3 buckets.](https://breachinsider.com/honey-buckets/)
+* [sadcloud](https://github.com/nccgroup/sadcloud) - A tool for standing up (and tearing down!) purposefully insecure cloud infrastructure 
