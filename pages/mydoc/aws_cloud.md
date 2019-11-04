@@ -60,6 +60,7 @@ folder: mydoc
 * [lunar](https://github.com/lateralblast/lunar): A UNIX security auditing tool based on several security frameworks
 * [cloud-reports](https://github.com/tensult/cloud-reports): Scans your AWS cloud resources and generates reports
 * [cs-suite](https://github.com/SecurityFTW/cs-suite): Cloud Security Suite - One stop tool for auditing the security posture of AWS/GCP/Azure infrastructure.
+* [cloud-service-enum](https://github.com/NotSoSecure/cloud-sec-wiki) - These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
 
 ### Offensive
 * [DumpsterDiver](https://github.com/securing/DumpsterDiver): Tool to search secrets in various filetypes.
@@ -70,6 +71,7 @@ folder: mydoc
 * [cloudfrunt](https://github.com/MindPointGroup/cloudfrunt): A tool for identifying misconfigured CloudFront domains
 * [mad-king](https://github.com/ThreatResponse/mad-king): Proof of Concept Zappa Based AWS Persistence and Attack Platform
 * [cloud-nuke](https://github.com/gruntwork-io/cloud-nuke): A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it
+* [cloud-service-enum](https://github.com/NotSoSecure/cloud-sec-wiki) - These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
 
 ### Continous Monitoring
 
