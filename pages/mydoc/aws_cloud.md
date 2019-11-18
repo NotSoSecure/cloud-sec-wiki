@@ -83,3 +83,4 @@ folder: mydoc
 
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter):  Hunt for security weaknesses in Kubernetes clusters
 * [Testing IAM Policies with the IAM Policy Simulator](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html)
+* [An AWS IAM Policy Linter: Parliament](https://duo.com/blog/an-aws-iam-policy-linter-parliament)
