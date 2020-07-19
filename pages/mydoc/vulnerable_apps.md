@@ -22,4 +22,8 @@ folder: mydoc
 * [lambhack](https://github.com/wickett/lambhack): A very vulnerable serverless application in AWS Lambda
 * [honeyLambda](https://github.com/0x4D31/honeyLambda): honeyλ - a simple, serverless application designed to create and monitor fake HTTP endpoints (i.e. URL honeytokens) automatically, on top of AWS Lambda and Amazon API Gateway
 * [Honey Buckets – Find out who is snooping through your Amazon S3 buckets.](https://breachinsider.com/honey-buckets/)
-* [sadcloud](https://github.com/nccgroup/sadcloud) - A tool for standing up (and tearing down!) purposefully insecure cloud infrastructure 
+* [sadcloud](https://github.com/nccgroup/sadcloud): A tool for standing up (and tearing down!) purposefully insecure cloud infrastructure
+* [Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat): Intentionally vulnerable cluster environment to learn and practice Kubernetes security by Madhu Akula
+* [kube-goat](https://github.com/ksoclabs/kube-goat): A deliberately vulnerable Kubernetes cluster
+* [TerraGoat](https://github.com/bridgecrewio/terragoat): Bridgecrew's "Vulnerable by Design" Terraform stack
+* [Cfngoat](https://github.com/bridgecrewio/cfngoat): Bridgecrew's "Vulnerable by design" Cloudformation template
