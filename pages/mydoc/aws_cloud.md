@@ -36,6 +36,7 @@ folder: mydoc
 * [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump): Security Tool to Look For Interesting Files in S3 Buckets
 * [bucket-stream](https://github.com/eth0izzle/bucket-stream): Find interesting Amazon S3 Buckets by watching certificate transparency logs.
 * [CloudScraper](https://github.com/jordanpotti/CloudScraper): Tool to enumerate targets in search of cloud resources. S3 Buckets, Azure Blobs, Digital Ocean Storage Space.
+* [kicks3](https://github.com/abuvanth/kicks3): S3 bucket finder from html,js and bucket misconfiguration testing tool.
 
 ### DFIR
 
