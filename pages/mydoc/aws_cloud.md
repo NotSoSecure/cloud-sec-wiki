@@ -18,21 +18,11 @@ folder: mydoc
 * [Assume the Worst: Enumerating AWS Roles through ‘AssumeRole’ - Rhino Security Labs](https://rhinosecuritylabs.com/aws/assume-worst-aws-assume-role-enumeration/)
 * [AWS Privilege Escalation – Methods and Mitigation](https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/)
 * [Exploiting SSRF in AWS Elastic Beanstalk](https://www.notsosecure.com/exploiting-ssrf-in-aws-elastic-beanstalk/)
-* [Bypassing IP Based Blocking with AWS API Gateway](https://rhinosecuritylabs.com/aws/bypassing-ip-based-blocking-aws/)
-* [An SSRF, privileged AWS keys and the Capital One breach](https://blog.appsecco.com/an-ssrf-privileged-aws-keys-and-the-capital-one-breach-4c3c2cded3af)
-* [From SSRF To AWS Credentials Disclosure](https://medium.com/bugbountywriteup/from-ssrf-to-aws-credentials-disclosure-64c51e1bf5dc)
-* [Gaining AWS Console Access via API Keys](https://blog.netspi.com/gaining-aws-console-access-via-api-keys/)
-* [Pivoting in Amazon Clouds](https://andresriancho.github.io/nimbostratus/pivoting-in-amazon-clouds.pdf)
-* [Escalating AWS IAM Privileges with an Undocumented CodeStar API](https://rhinosecuritylabs.com/aws/escalating-aws-iam-privileges-undocumented-codestar-api/)
-* [CloudGoat AWS Scenario Walkthrough: “EC2_SSRF”](https://rhinosecuritylabs.com/cloud-security/cloudgoat-aws-scenario-ec2_ssrf/)
-* [Exploiting AWS ECR and ECS with the Cloud Container Attack Tool (CCAT)](https://rhinosecuritylabs.com/aws/cloud-container-attack-tool/)
-* [Pillaging AWS ECS Task Definitions for Hardcoded Secrets](https://rhinosecuritylabs.com/aws/pillaging-ecs-task-definitions-two-new-pacu-modules/)
-* [Phishing Users with MFA on AWS](https://rhinosecuritylabs.com/aws/mfa-phishing-on-aws/)
-* [S3 Ransomware Part 1: Attack Vector](https://rhinosecuritylabs.com/aws/s3-ransomware-part-1-attack-vector/)
-* [S3 Ransomware Part 2: Prevention and Defense](https://rhinosecuritylabs.com/aws/s3-ransomware-part-2-prevention-and-defense/)
-* [Abusing VPC Traffic Mirroring in AWS](https://rhinosecuritylabs.com/aws/abusing-vpc-traffic-mirroring-in-aws/)
-* [Exploiting email address parsing with AWS SES](https://nathandavison.com/blog/exploiting-email-address-parsing-with-aws-ses)
-* [Weaponizing AWS ECS Task Definitions to Steal Credentials From Running Containers](https://rhinosecuritylabs.com/aws/weaponizing-ecs-task-definitions-steal-credentials-running-containers/)
+* [AWS resource naming patterns](https://summitroute.com/blog/2019/02/10/aws_resource_naming_patterns/)
+* [Internet-Scale analysis of AWS Cognito Security](https://andresriancho.com/internet-scale-analysis-of-aws-cognito-security/ )
+* [Hacking AWS Misconfigurations](https://www.notsosecure.com/hacking-aws-cognito-misconfigurations/)
+* [AWS IAM User Enumeration](https://rhinosecuritylabs.com/aws/aws-iam-user-enumeration/)
+* [AWS IAM User Enumeration-2](https://rhinosecuritylabs.com/aws/aws-role-enumeration-iam-p2/)
 * Post Exploitation
   * [Post Exploitation in AWS using Nimbostratus - Cloud Security Operations](https://cloudsecops.com/post-exploitation-in-aws/)
   * [A centralized source of all AWS IAM privilege escalation methods](https://github.com/RhinoSecurityLabs/AWS-IAM-Privilege-Escalation)
@@ -76,7 +66,7 @@ folder: mydoc
 * [lunar](https://github.com/lateralblast/lunar): A UNIX security auditing tool based on several security frameworks
 * [cloud-reports](https://github.com/tensult/cloud-reports): Scans your AWS cloud resources and generates reports
 * [cs-suite](https://github.com/SecurityFTW/cs-suite): Cloud Security Suite - One stop tool for auditing the security posture of AWS/GCP/Azure infrastructure.
-* [cloud-service-enum](https://github.com/NotSoSecure/cloud-sec-wiki): These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
+* [cloud-service-enum](https://github.com/NotSoSecure/cloud-service-enum): These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
 * [Chamber](https://github.com/segmentio/chamber): Tool for managing secrets. It does so by storing secrets in SSM Parameter Store, an AWS service for storing secrets.
 * [Policy Sentry](https://github.com/salesforce/policy_sentry): IAM Least Privilege Policy Generator by Salesforce
 * [Antiope](https://github.com/turnerlabs/antiope): AWS Inventory & Compliance Framework
@@ -91,7 +81,7 @@ folder: mydoc
 * [cloudfrunt](https://github.com/MindPointGroup/cloudfrunt): A tool for identifying misconfigured CloudFront domains
 * [mad-king](https://github.com/ThreatResponse/mad-king): Proof of Concept Zappa Based AWS Persistence and Attack Platform
 * [cloud-nuke](https://github.com/gruntwork-io/cloud-nuke): A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it
-* [cloud-service-enum](https://github.com/NotSoSecure/cloud-sec-wiki): These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
+* [cloud-service-enum](https://github.com/NotSoSecure/cloud-service-enum): These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
 * [Cloudsplaining](https://github.com/salesforce/cloudsplaining): AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report.
 
 ### Continous Monitoring
