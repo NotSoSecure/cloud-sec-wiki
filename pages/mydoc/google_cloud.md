@@ -10,6 +10,13 @@ folder: mydoc
 ## Blogs/Research
 
 * [Hacking the cloud](https://adsecurity.org/wp-content/uploads/2017/07/2017-DEFCON-HackingTheCloud-SteereMetcalf-Final.pdf)
+* [Tutorial on privilege escalation and post exploitation tactics in Google Cloud Platform environments](https://about.gitlab.com/blog/2020/02/12/plundering-gcp-escalating-privileges-in-google-cloud-platform/)
+* [Privilege Escalation in Google Cloud Platform – Part 1 (IAM)](https://rhinosecuritylabs.com/gcp/privilege-escalation-google-cloud-platform-part-1/)
+* [Privilege Escalation in Google Cloud Platform – Part 2 (Non-IAM)](https://rhinosecuritylabs.com/cloud-security/privilege-escalation-google-cloud-platform-part-2/)
+* [RCE to IAM Privilege Escalation in GCP Cloud Build](https://rhinosecuritylabs.com/gcp/iam-privilege-escalation-gcp-cloudbuild/)
+* [Using K3s for command and control on compromised Linux hosts](https://blog.christophetd.fr/using-k3s-for-command-and-control-on-compromised-linux-hosts/)
+* [Attacking Default Installs of Helm on Kubernetes](https://blog.ropnop.com/attacking-default-installs-of-helm-on-kubernetes/)
+* [Introduction to GKE Kubelet TLS Bootstrap Privilege Escalation](https://rhinosecuritylabs.com/cloud-security/kubelet-tls-bootstrap-privilege-escalation/)
 
 ## Tools
 

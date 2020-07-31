@@ -64,6 +64,18 @@ kramdown:
 collections:
   tooltips:
     output: false
+
+# Authors
+authors:
+  anand:
+    name: Anand Tiwari
+    display_name: Anand Tiwari
+    gravatar: d456f7972a30e67bbb05b393dcd4e996
+    web: https://anandtiwari.info
+    twitter: https://twitter.com/anandtiwarics
+    description: "InfoSecurity Enthusiast"
+
+
 # collections are declared here. this renders the content in _tooltips and processes it, but doesn't output it as actual files in the output unless you change output to true
 
 defaults:
@@ -103,9 +115,11 @@ defaults:
 sidebars:
 - home_sidebar
 - mydoc_sidebar
+- posts_sidebar
 - product1_sidebar
 - product2_sidebar
 - other
+
 
 description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
 # the description is used in the feed.xml file

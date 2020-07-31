@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>AWS Cloud Security Review: Setup - Part 1 | Cloud Security Wiki</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-green.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="cloud-sec-wiki" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><img style="vertical-align:-20px" src="images/CLOUD_SECURITY_WIKI_logo.svg"/></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <li><a href="https://github.com/notsosecure" target="_blank">GitHub</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:cloudsecwiki@notsosecure.com?subject=Cloud Security Wiki Feedback feedback&body=I have some feedback about the AWS Cloud Security Review: Setup - Part 1 page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+</li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="AWS Cloud Security Review: Setup - Part 1">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">Index </li>
+  
+  
+  
+  <li>
+      <a href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a href="index.html">Introduction</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Getting Started - AWS</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a href="AWS-Cloud-Configuration-Security-Review-Setup-Part-1.html">AWS Cloud Configuration Security Review: Setup - Part 1</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Resources</a>
+      <ul>
+          
+          
+          
+          <li><a href="aws_cloud.html">AWS Cloud</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="google_cloud.html">Google Cloud</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="azure_cloud.html">Azure Cloud</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="vulnerable_apps.html">Vulnerable Apps</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="kubernetes.html">Kubernetes</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="docker.html">Docker</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Trainings</a>
+      <ul>
+          
+          
+          
+          <li><a href="http:\\www.notsosecure.com\hacking-training\cloud-hacking\">Hacking and Securing Cloud Infrastructure Training</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">AWS Cloud Security Review: Setup - Part 1</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+
+
+   <p><br /></p>
+
+<p>Organizations are rapidly moving their IT infrastructure on public clouds and using their native services. AWS cloud remains to be the mostly widely used public cloud service. Development and IT teams are adopting cloud services and deploying their infrastructure to scale up their operations. Cloud security is another aspect where the security team of an organization should work together with the development and operation teams. Cloud security refers to a broad set of policies, controls, procedures, and technologies that work together to protect cloud-based systems, data, and infrastructure.</p>
+
+<h3 id="motivation">Motivation</h3>
+
+<p>Cloud security is a popular topic in the industry as organizations migrate their IT from on-premise to cloud environment. Security professionals also need to upskill their knowledge as per industry requirements and enhance their overall knowledge and understanding of cloud security. When I started learning cloud security and practicing practical hands-on skills, I struggled initially to find tutorials on cloud security. I will try to cover all concepts and hands-on step by step tutorial through a series of posts. We will start with setting up the environment and perform an AWS configuration security review. Also, we will explore multiple AWS security misconfigurations that expose sensitive information or take control of hosted applications.</p>
+
+<p>In this post, we will talk about AWS “Shared Responsibility Model” and then set up an AWS Free tier account. We will also set up AWS CLI to perform some actions from commands in your terminal. This blog post is for beginners and for those who never used AWS services.</p>
+
+<h3 id="shared-responsibility-model">Shared Responsibility Model</h3>
+
+<p>Before starting the tutorial it is important to understand the shared responsibility model in cloud computing. Amazon Web Services (AWS) has developed a shared responsibility model to regulate the security and compliance of its end-users. Your cloud provider is responsible for making sure your infrastructure built within its platform is secure and reliable. On the other hand, customizable cloud capabilities like application management, network configuration, and encryption are the responsibilities of end-users.</p>
+
+<p><img src="/images/posts/aws/post-1/1.png" alt="alt text" /></p>
+
+<p>According to the <a href="https://www.gartner.com/smarterwithgartner/is-the-cloud-secure/">Gartner report</a>, it is expected that over the next upcoming years, at least 95% of cloud security failures will be the customer’s fault, and due to misconfiguration of implementation. So it is essential to review cloud configuration and implementation of cloud-native services periodically to protect assets on the public cloud.</p>
+
+<h3 id="setup-aws-account">Setup AWS Account</h3>
+
+<p>In order to start with, we need an AWS account and set up users with appropriate permissions. You can sign up for an <a href="https://aws.amazon.com/free/">AWS Free Tier</a> account and get access to the AWS cloud.</p>
+
+<p>Follow the steps given below to Sign Up AWS Free Tier account:</p>
+
+<ul>
+  <li>Go to  AWS Free Tier https://aws.amazon.com/free/ and click on create a free account.</li>
+  <li>Provide your details and signup with an AWS free tier account.</li>
+</ul>
+
+<p><img src="/images/posts/aws/post-1/2.png" alt="alt text" /></p>
+
+<h3 id="setting-up-identity-and-access-management">Setting Up Identity And Access Management</h3>
+
+<p>Once you have signed up you need to configure your AWS account and make sure security best practices are implemented in your IAM after signing up with the AWS account.</p>
+
+<p>Go to Services &gt; IAM to configure your account.</p>
+
+<p><img src="/images/posts/aws/post-1/3.png" alt="alt text" /></p>
+
+<p>As you can see in your account, most of the security status flags are showing warnings and you need to configure all of them by following instructions.</p>
+
+<h3 id="activate-multi-factor-authentication-mfa">Activate Multi-Factor Authentication (MFA)</h3>
+
+<p>Activate your multi-factor authentication (MFA) using any Virtual MFA device. In my case, I am using an Authy app to configure multi-factor authentication.</p>
+
+<p><img src="/images/posts/aws/post-1/4.png" alt="alt text" /></p>
+
+<p><img src="/images/posts/aws/post-1/5.png" alt="alt text" /></p>
+
+<p><img src="/images/posts/aws/post-1/6.png" alt="alt text" /></p>
+
+<h3 id="create-individual-iam-users">Create Individual IAM Users</h3>
+
+<p>Create two user accounts one is an Admin and another Audit user to access your AWS account through programmatically and console. Do not use your AWS root account for day-to-day interaction with AWS. <a href="http://docs.aws.amazon.com/console/iam/security-status-create-users">Learn More</a></p>
+
+<p><img src="/images/posts/aws/post-1/7.png" alt="alt text" /></p>
+
+<p>Create an admin group and attach it with admin users. You needed to select permission of the admin group as AdministratorAccess.</p>
+
+<p><img src="/images/posts/aws/post-1/8.png" alt="alt text" /></p>
+
+<p>Note and store securely your admin account Access key ID and Secret access key.</p>
+
+<p>Next, create an audit user account similar to how we have created an admin account. We will use an audit user account for our further activities.</p>
+
+<p><img src="/images/posts/aws/post-1/9.png" alt="alt text" /></p>
+
+<p>Select “Attach existing policies directly” and attach below policies shown in the below pictures.</p>
+<ul>
+  <li>SecurityAudit</li>
+  <li>ReadOnlyAccess</li>
+</ul>
+
+<p><img src="/images/posts/aws/post-1/10.png" alt="alt text" /></p>
+
+<p><img src="/images/posts/aws/post-1/11.png" alt="alt text" /></p>
+
+<h3 id="set-password-policy">Set Password Policy</h3>
+
+<p>Setup you password policy</p>
+
+<p><img src="/images/posts/aws/post-1/12.png" alt="alt text" /></p>
+
+<p><img src="/images/posts/aws/post-1/13.png" alt="alt text" /></p>
+
+<p><img src="/images/posts/aws/post-1/14.png" alt="alt text" /></p>
+
+<h3 id="aws-command-line-interface">AWS Command Line Interface</h3>
+
+<p>The AWS Command Line Interface (AWS CLI ) is a tool that allows you to interact with AWS services using commands in your command-line shell. It requires minimal configuration and enables you to start running commands that implement functionality equivalent to that provided by the browser-based AWS management console from the command prompt in your terminal.</p>
+
+<p>In order to install AWS CLI, follow the below given instruction in AWS official website:</p>
+
+<p><a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html">Linux</a> 
+<a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html">MacOS</a>
+<a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-windows.html">Windows</a></p>
+
+<h3 id="aws-cli-configuration">AWS CLI Configuration</h3>
+
+<p>AWS CLI configuration required AWS Access key ID, AWS Secret access key, and AWS Region.</p>
+
+<p>This information was found while creating users that you noted. We’ll be using the audit user’s access key and secret key.</p>
+
+<p>Type the below command to configure AWS keys and provide your AWS Access Key ID, AWS Secret Access key and region you preferred :</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws configure
+</code></pre></div></div>
+
+<p><img src="/images/posts/aws/post-1/15.png" alt="alt text" /></p>
+
+<p>CLI credentials file – The credentials and config file are updated when you run the command aws configure. The credentials file is located at <code class="highlighter-rouge">~/.aws/credentials</code> on Linux or macOS, or at <code class="highlighter-rouge">C:\Users\USERNAME\.aws\credentials</code> on Windows. This file can contain the credential details for the default profile and any named profiles.</p>
+
+<h3 id="getting-started-with-aws-cli">Getting Started With AWS CLI</h3>
+
+<p>To start with AWS CLI it is very important to have <a href="https://docs.aws.amazon.com/cli/latest/index.html">AWS CLI Command Reference</a> which provides a consistent interface for interacting with all parts of AWS.</p>
+
+<p>We are going to widely use the AWS CLI Command reference that helps us explore all parts of AWS services. Using AWS CLI you can perform all actions in your AWS account such as create a user, group, policy even you can delete, modify, and update users through IAM.</p>
+
+<p>Let’s explore some of the IAM functionality using AWS CLI by running some commands.</p>
+
+<p>We are going to widely use the AWS CLI Command reference that helps us explore all parts of AWS services. Using AWS CLI you can perform all actions in your AWS account such as create a user, group, policy even you can delete, modify, and update users through IAM.</p>
+
+<p>Let’s explore some of the IAM functionality using AWS CLI by running some commands.</p>
+
+<h3 id="create-a-new-user">Create A New User</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws iam create-user <span class="nt">--user-name</span> Bob
+</code></pre></div></div>
+
+<p><img src="/images/posts/aws/post-1/16.png" alt="alt text" /></p>
+
+<p>As you can see below, the picture from the AWS console, user was created successfully.</p>
+
+<p><img src="/images/posts/aws/post-1/17.png" alt="alt text" /></p>
+
+<h3 id="create-access-key">Create Access Key</h3>
+
+<p>Now let’s create user’s access key by using the following command</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws iam create-access-key <span class="nt">--user-name</span> Bob
+</code></pre></div></div>
+
+<p><img src="/images/posts/aws/post-1/18.png" alt="alt text" /></p>
+
+<p>As you can see we have successfully created a user’s access key by using the AWS CLI command.</p>
+
+<p>But our new user Bob does not have permission or not added to any group. So, our next task is to add Bob users to the admin group.</p>
+
+<p>Let’s suppose you don’t know how many groups into an AWS account. You can get the list by below command and add any user to the group.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws iam list-groups
+</code></pre></div></div>
+
+<p><img src="/images/posts/aws/post-1/19.png" alt="alt text" /></p>
+
+<p>Let’s add Bob user into AdminGroup by typing below command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws iam add-user-to-group <span class="nt">--user-name</span> Bob <span class="nt">--group-name</span> AdminGroup
+</code></pre></div></div>
+
+<p>As you can see in the picture below after running the above command Bob user added into AdminGroup and get access to all admin permission.</p>
+
+<p><img src="/images/posts/aws/post-1/20.png" alt="alt text" /></p>
+
+<p>Now let’s delete Bob user from our AWS account by following the below command.</p>
+
+<p>We Cannot delete the entity and must be removed from the group first and remove the access key from the user.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws iam remove-user-from-group <span class="nt">--user-name</span> Bob <span class="nt">--group-name</span> AdminGroup
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws iam delete-access-key <span class="nt">--access-key-id</span> AKIDPMS9RO4H3FEXAMPLE <span class="nt">--user-name</span> Bob
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws iam delete-user <span class="nt">--user-name</span> Bob
+</code></pre></div></div>
+
+<p>These are just examples to show how AWS CLI works and we can access functionalities by running commands. In a similar manner, you can perform multiple actions from the command line which we will explore in future tutorial blog posts.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>In this blog post, we’ve learned  about AWS Shared Responsibility Model, then created an AWS account and set up AWS CLI to get comfortable with command-line functionality. In our next blog posts, we’ll explore more about AWS security configuration and implementation.</p>
+
+<h3 id="about-author"><strong><em>About Author</em></strong></h3>
+
+<p><strong><em><a href="https://twitter.com/anandtiwarics">Anand Tiwari</a> is a Senior Security Consultant at NotSoSecure with expertise in Web Application Security, Cloud Security and DevSecOps. He is also the author of an Open Source tool called <a href="https://archerysec.com">ArcherySec</a></em></strong>.</p>
+
+<h3 id="references">References:</h3>
+
+<p><a href="https://aws.amazon.com/compliance/shared-responsibility-model/">https://aws.amazon.com/compliance/shared-responsibility-model/</a></p>
+
+<p><a href="https://docs.aws.amazon.com/cli/latest/index.html">https://docs.aws.amazon.com/cli/latest/index.html</a></p>
+
+<p><a href="https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html">https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-mac.html</a></p>
+
+<p><a href="https://aws.amazon.com/free/">https://aws.amazon.com/free/</a></p>
+
+
+
+    
+
+        <a target="_blank" href="https://github.com/notsosecure/cloud-sec-wiki/blob/gh-pages/pages/posts/aws/AWS-Cloud-Configuration-Security-Review-Setup-Part-1.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me on Github</a>
+
+    
+
+
+<footer>
+
+            <div class="row">
+                <div class="col-lg-12 footer">
+                <p><a href="https://notsosecure.com"><img src="images/NOTSOSECURE-CCS.png" alt="Company logo"/></a></p> &copy; 2020. Powered by NotSoSecure - A Claranet Group Company. <br />
+
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-150383569-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>
