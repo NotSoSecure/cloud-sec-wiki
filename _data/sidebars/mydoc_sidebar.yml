@@ -15,11 +15,11 @@ entries:
       output: web
       type: homepage
 
-  - title: "Getting Started - AWS"
+  - title: "Getting Started with Cloud Security"
     output: web
     folderitems:
 
-    - title: "AWS Cloud Configuration Security Review: Setup - Part 1"
+    - title: "AWS Cloud Security Review: Setup - Part 1"
       url: /AWS-Cloud-Configuration-Security-Review-Setup-Part-1.html
       output: web, pdf
       type: pages
