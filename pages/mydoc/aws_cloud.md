@@ -38,6 +38,11 @@ folder: mydoc
 * [Abusing VPC Traffic Mirroring in AWS](https://rhinosecuritylabs.com/aws/abusing-vpc-traffic-mirroring-in-aws/)
 * [Exploiting email address parsing with AWS SES](https://nathandavison.com/blog/exploiting-email-address-parsing-with-aws-ses)
 * [Weaponizing AWS ECS Task Definitions to Steal Credentials From Running Containers](https://rhinosecuritylabs.com/aws/weaponizing-ecs-task-definitions-steal-credentials-running-containers/)
+* [Auditing PassRole: A Problematic Privilege Escalation Permission](https://ermetic.com/whats-new/blog/auditing-passrole-a-problematic-privilege-escalation-permission/)
+* [Lesser Known Techniques for Attacking AWS Environments](https://tldrsec.com/blog/lesser-known-aws-attacks/)
+* [Gaining Persistency on Vulnerable Lambdas](https://unit42.paloaltonetworks.com/gaining-persistency-vulnerable-lambdas/)
+* [Bypassing and exploiting Bucket Upload Policies and Signed URLs](https://labs.detectify.com/2018/08/02/bypassing-exploiting-bucket-upload-policies-signed-urls/)
+* [S3 Bucket Namesquatting - Abusing predictable S3 bucket names](https://onecloudplease.com/blog/s3-bucket-namesquatting)
 * Post Exploitation
   * [Post Exploitation in AWS using Nimbostratus - Cloud Security Operations](https://cloudsecops.com/post-exploitation-in-aws/)
   * [A centralized source of all AWS IAM privilege escalation methods](https://github.com/RhinoSecurityLabs/AWS-IAM-Privilege-Escalation)
