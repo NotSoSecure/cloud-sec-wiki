@@ -17,6 +17,9 @@ folder: mydoc
 * [Using K3s for command and control on compromised Linux hosts](https://blog.christophetd.fr/using-k3s-for-command-and-control-on-compromised-linux-hosts/)
 * [Attacking Default Installs of Helm on Kubernetes](https://blog.ropnop.com/attacking-default-installs-of-helm-on-kubernetes/)
 * [Introduction to GKE Kubelet TLS Bootstrap Privilege Escalation](https://rhinosecuritylabs.com/cloud-security/kubelet-tls-bootstrap-privilege-escalation/)
+* [Google Cloud Platform (GCP) Service Account-based Privilege Escalation paths](https://www.praetorian.com/blog/google-cloud-platform-gcp-service-account-based-privilege-escalation-paths)
+* [Bypassing and exploiting Bucket Upload Policies and Signed URLs](https://labs.detectify.com/2018/08/02/bypassing-exploiting-bucket-upload-policies-signed-urls/)
+* [Google Cloud (over)Run: How a free trial experiment ended with a $72,000 bill overnight](https://www.theregister.com/AMP/2020/12/10/google_cloud_over_run/)
 
 ## Tools
 
