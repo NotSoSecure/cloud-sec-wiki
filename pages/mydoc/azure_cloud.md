@@ -36,6 +36,9 @@ folder: mydoc
 * [Attacking Azure with Custom Script Extensions](https://blog.netspi.com/attacking-azure-with-custom-script-extensions/)
 * [Maintaining Azure Persistence via Automation Accounts](https://blog.netspi.com/maintaining-azure-persistence-via-automation-accounts/)
 * [Using Azure Automation Accounts to Access Key Vaults](https://blog.netspi.com/azure-automation-accounts-key-stores/)
+* [Azure Security Basics: Log Analytics, Security Center, and Sentinel](https://www.blackhillsinfosec.com/azure-security-basics-log-analytics-security-center-and-sentinel/)
+* [PRIVILEGE ESCALATION IN AZURE AD](https://emptydc.com/2020/12/10/privilege-escalation-in-azure-ad/)
+* [Making Clouds Rain :: Remote Code Execution in Microsoft Office 365](https://srcincite.io/blog/2021/01/12/making-clouds-rain-rce-in-office-365.html)
 * Post Exploitation
     * [Azure Post Exploitation Techniques](https://azure.microsoft.com/en-in/blog/azure-post-exploitation-techniques/)
     * [Identifying & Exploiting Leaked Azure Storage Keys](https://www.notsosecure.com/identifying-exploiting-leaked-azure-storage-keys/)
@@ -50,3 +53,4 @@ folder: mydoc
 
 * [azucar](https://github.com/nccgroup/azucar): Security auditing tool for Azure environments
 * [cs-suite](https://github.com/SecurityFTW/cs-suite): One stop tool for auditing the security posture of AWS/GCP/Azure infrastructure.
+* [onedrive_user_enum](https://github.com/nyxgeek/onedrive_user_enum): enumerate valid onedrive users
