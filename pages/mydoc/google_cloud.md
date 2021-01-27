@@ -20,6 +20,10 @@ folder: mydoc
 * [Google Cloud Platform (GCP) Service Account-based Privilege Escalation paths](https://www.praetorian.com/blog/google-cloud-platform-gcp-service-account-based-privilege-escalation-paths)
 * [Bypassing and exploiting Bucket Upload Policies and Signed URLs](https://labs.detectify.com/2018/08/02/bypassing-exploiting-bucket-upload-policies-signed-urls/)
 * [Google Cloud (over)Run: How a free trial experiment ended with a $72,000 bill overnight](https://www.theregister.com/AMP/2020/12/10/google_cloud_over_run/)
+* [GCP OAuth Token Hijacking in Google Cloud – Part 1](https://www.netskope.com/blog/gcp-oauth-token-hijacking-in-google-cloud-part-1)
+* [GCP OAuth Token Hijacking in Google Cloud—Part 2](https://www.netskope.com/blog/gcp-oauth-token-hijacking-in-google-cloud-part-2)
+* [The Power of Kubernetes RBAC LIST](https://darkbit.io/blog/the-power-of-kubernetes-rbac-list)
+
 
 ## Tools
 
