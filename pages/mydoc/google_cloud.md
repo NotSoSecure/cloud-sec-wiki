@@ -23,7 +23,6 @@ folder: mydoc
 * [GCP OAuth Token Hijacking in Google Cloud – Part 1](https://www.netskope.com/blog/gcp-oauth-token-hijacking-in-google-cloud-part-1)
 * [GCP OAuth Token Hijacking in Google Cloud—Part 2](https://www.netskope.com/blog/gcp-oauth-token-hijacking-in-google-cloud-part-2)
 * [The Power of Kubernetes RBAC LIST](https://darkbit.io/blog/the-power-of-kubernetes-rbac-list)
-* []()
 
 
 ## Tools
