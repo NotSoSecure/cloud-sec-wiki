@@ -16,7 +16,7 @@ folder: mydoc
 * [Applied Defense On Docker And Kubernetes](https://www.youtube.com/watch?v=auC712hFJes)
 * [Bad Pods: Kubernetes Pod Privilege Escalation](https://labs.bishopfox.com/tech-blog/bad-pods-kubernetes-pod-privilege-escalation)
 * [Getting into a bind with Kubernetes](https://raesene.github.io/blog/2021/01/16/Getting-Into-A-Bind-with-Kubernetes/)
-
+* [Kubernetes Honey Token](https://darkbit.io/blog/k8s-honey-token)
 
 ## Defensive Tools
 
