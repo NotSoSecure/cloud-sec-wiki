@@ -39,6 +39,7 @@ folder: mydoc
 * [Azure Security Basics: Log Analytics, Security Center, and Sentinel](https://www.blackhillsinfosec.com/azure-security-basics-log-analytics-security-center-and-sentinel/)
 * [PRIVILEGE ESCALATION IN AZURE AD](https://emptydc.com/2020/12/10/privilege-escalation-in-azure-ad/)
 * [Making Clouds Rain :: Remote Code Execution in Microsoft Office 365](https://srcincite.io/blog/2021/01/12/making-clouds-rain-rce-in-office-365.html)
+* [How We Escaped Docker in Azure Functions](https://www.intezer.com/blog/research/how-we-escaped-docker-in-azure-functions/)
 * Post Exploitation
     * [Azure Post Exploitation Techniques](https://azure.microsoft.com/en-in/blog/azure-post-exploitation-techniques/)
     * [Identifying & Exploiting Leaked Azure Storage Keys](https://www.notsosecure.com/identifying-exploiting-leaked-azure-storage-keys/)
