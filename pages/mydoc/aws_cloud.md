@@ -103,6 +103,7 @@ folder: mydoc
 * [cloud-nuke](https://github.com/gruntwork-io/cloud-nuke): A tool for cleaning up your cloud accounts by nuking (deleting) all resources within it
 * [cloud-service-enum](https://github.com/NotSoSecure/cloud-service-enum): These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
 * [Cloudsplaining](https://github.com/salesforce/cloudsplaining): AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report.
+* [security-cloud-scout](https://github.com/SygniaLabs/security-cloud-scout) - Cloud Scout is a plugin which works on top of BloodHound, leveraging its visualization capabilities in order to visualize cross platform attack paths.
 
 ### Continous Monitoring
 
