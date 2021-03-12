@@ -33,6 +33,7 @@ folder: mydoc
 * [cs-suite](https://github.com/SecurityFTW/cs-suite): One stop tool for auditing the security posture of AWS/GCP/Azure infrastructure.
 * [forseti-security](https://github.com/GoogleCloudPlatform/forseti-security): A community-driven collection of open source tools to improve the security of your Google Cloud Platform environments.
 * [gcp-iam-collector](https://github.com/marcin-kolda/gcp-iam-collector) - Python script for collecting and visualising Google Cloud Platform IAM permissions
+* [Security Response Automation](https://github.com/GoogleCloudPlatform/security-response-automation) - automated actions on your Security Command Center.
 
 ### Offensive
 
