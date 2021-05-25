@@ -14,6 +14,9 @@ folder: mydoc
 * [ABSTRACT SHIMMER (CVE-2020-15257): Host Networking is root-Equivalent, Again](https://research.nccgroup.com/2020/12/10/abstract-shimmer-cve-2020-15257-host-networking-is-root-equivalent-again/)
 * [Applied Defense On Docker And Kubernetes](https://www.youtube.com/watch?v=auC712hFJes)
 * [Access to remapped root allows privilege escalation to real root](https://github.com/moby/moby/security/advisories/GHSA-7452-xqpj-6rpc)
+* [Royal Flush: Privilege Escalation Vulnerability in Azure Functions](https://www.intezer.com/blog/cloud-security/royal-flush-privilege-escalation-vulnerability-in-azure-functions/)
+* [The worst so-called “best practice” for Docker](https://pythonspeed.com/articles/security-updates-in-docker/)
+* [A practical guide to writing secure Dockerfiles](https://medium.com/miro-engineering/a-practical-guide-to-writing-secure-dockerfiles-bf561224dd80)
 
 ## Security Tools
 

@@ -43,6 +43,22 @@ folder: mydoc
 * [Gaining Persistency on Vulnerable Lambdas](https://unit42.paloaltonetworks.com/gaining-persistency-vulnerable-lambdas/)
 * [Bypassing and exploiting Bucket Upload Policies and Signed URLs](https://labs.detectify.com/2018/08/02/bypassing-exploiting-bucket-upload-policies-signed-urls/)
 * [S3 Bucket Namesquatting - Abusing predictable S3 bucket names](https://onecloudplease.com/blog/s3-bucket-namesquatting)
+* [Securing your Amazon AWS S3 presigned URLs, tips and tricks](https://insecurity.blog/2021/03/06/securing-amazon-s3-presigned-urls/)
+* [Dangling DNS: Amazon EC2 IPs](https://blog.melbadry9.xyz/dangling-dns/aws/ddns-ec2-current-state)
+* [Hacking the Cloud](https://hackingthe.cloud/)
+* [Sensitive AWS API Calls That Return Credentials and Data](https://kmcquade.com/2020/12/sensitive-aws-api-calls/)
+* [Hackers as Cloud Customers](https://medium.com/cloud-security/hackers-as-cloud-customers-45b44654908b)
+* [Security checklist for cloud workload protection](https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/datasheets/prisma-cloud-native-security-checklist-ds)
+* [Security Logging in Cloud Environments - AWS](https://www.marcolancini.it/2021/blog-security-logging-cloud-environments-aws/)
+* [Auditing PassRole: A Problematic Privilege Escalation Permission](https://ermetic.com/whats-new/blog/aws/auditing-passrole-a-problematic-privilege-escalation-permission/?utm_source=cyfluencer&utm_medium=influencer-library)
+* [Presenting the Risk: Do You Know About this AWS Authorization Misuse?](https://blog.lightspin.io/aws-iam-groups-authorization-bypass)
+* [Cloud Storage Security: Attacking & Auditing](https://payatu.com/blog/vitthal/cloud-storage-security)
+* [Cloud lateral movement: Breaking in through a vulnerable container](https://sysdig.com/blog/lateral-movement-cloud-containers/)
+* [Kubernetes Multi tenancy with Amazon EKS: Best practices and considerations](https://www.clickittech.com/saas/kubernetes-multi-tenancy/)
+* [Hacking AWS: HackerOne & AWS CTF 2021 writeup](https://medium.com/@pkusik/hacking-aws-hackerone-aws-ctf-2021-writeup-7772effd1512)
+* [Exploiting weak configurations in Amazon Cognito](https://blog.appsecco.com/exploiting-weak-configurations-in-amazon-cognito-in-aws-471ce761963)
+* [Password reset code brute-force vulnerability in AWS Cognito](https://www.pentagrid.ch/en/blog/password-reset-code-brute-force-vulnerability-in-AWS-Cognito/)
+* [Domain Hijacking Via Logic Error - Gandi And Route 53 Vulnerability](https://www.cyberis.co.uk/blog/domain-hijacking.html)
 * Post Exploitation
   * [Post Exploitation in AWS using Nimbostratus - Cloud Security Operations](https://cloudsecops.com/post-exploitation-in-aws/)
   * [A centralized source of all AWS IAM privilege escalation methods](https://github.com/RhinoSecurityLabs/AWS-IAM-Privilege-Escalation)
@@ -90,6 +106,8 @@ folder: mydoc
 * [Chamber](https://github.com/segmentio/chamber): Tool for managing secrets. It does so by storing secrets in SSM Parameter Store, an AWS service for storing secrets.
 * [Policy Sentry](https://github.com/salesforce/policy_sentry): IAM Least Privilege Policy Generator by Salesforce
 * [Antiope](https://github.com/turnerlabs/antiope): AWS Inventory & Compliance Framework
+* [rpCheckup](https://github.com/goldfiglabs/rpCheckup): Catch AWS resource policy backdoors
+* [AWS CloudFormation Guard](https://github.com/aws-cloudformation/cloudformation-guard): AWS CloudFormation Guard is an open-source general-purpose policy-as-code evaluation tool. 
 
 
 ### Offensive
@@ -104,6 +122,8 @@ folder: mydoc
 * [cloud-service-enum](https://github.com/NotSoSecure/cloud-service-enum): These script allows pentesters to validate which cloud tokens (API keys, OAuth tokens and more) can access which cloud service.
 * [Cloudsplaining](https://github.com/salesforce/cloudsplaining): AWS IAM Security Assessment tool that identifies violations of least privilege and generates a risk-prioritized HTML report.
 * [security-cloud-scout](https://github.com/SygniaLabs/security-cloud-scout) - Cloud Scout is a plugin which works on top of BloodHound, leveraging its visualization capabilities in order to visualize cross platform attack paths.
+* [Red-Shadow](https://github.com/lightspin-tech/red-shadow) - Scan your AWS IAM Configuration for shadow admins in AWS IAM based on misconfigured 
+* [S3 Account Search](https://github.com/WeAreCloudar/s3-account-search) - This tool lets you find the account id an S3 bucket belongs too.
 
 ### Continous Monitoring
 

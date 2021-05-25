@@ -40,6 +40,15 @@ folder: mydoc
 * [PRIVILEGE ESCALATION IN AZURE AD](https://emptydc.com/2020/12/10/privilege-escalation-in-azure-ad/)
 * [Making Clouds Rain :: Remote Code Execution in Microsoft Office 365](https://srcincite.io/blog/2021/01/12/making-clouds-rain-rce-in-office-365.html)
 * [How We Escaped Docker in Azure Functions](https://www.intezer.com/blog/research/how-we-escaped-docker-in-azure-functions/)
+* [Hackers as Cloud Customers](https://medium.com/cloud-security/hackers-as-cloud-customers-45b44654908b)
+* [Security checklist for cloud workload protection](https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/datasheets/prisma-cloud-native-security-checklist-ds)
+* [Azure AD - Attack and Defense Playbook](https://github.com/Cloud-Architekt/AzureAD-Attack-Defense)
+* [Best practices for monitoring Microsoft Azure platform logs](https://www.datadoghq.com/blog/monitoring-azure-platform-logs/)
+* [Royal Flush: Privilege Escalation Vulnerability in Azure Functions](https://www.intezer.com/blog/cloud-security/royal-flush-privilege-escalation-vulnerability-in-azure-functions/)
+* [AZURE APPLICATION PROXY C2](https://www.trustedsec.com/blog/azure-application-proxy-c2/)
+* [Azure Storage Security: Attacking & Auditing ](https://payatu.com/blog/vitthal/azure-storage-security)
+* [The False Oracle — Azure Functions Padding Oracle Issue](https://polarply.medium.com/the-false-oracle-azure-functions-padding-oracle-issue-2025e0e6b8a)
+* [How Attackers Use Compromised Accounts to Create and Distribute Malicious OAuth Apps ](https://www.proofpoint.com/us/blog/email-and-cloud-threats/how-attackers-use-compromised-accounts-create-and-distribute-malicious)
 * Post Exploitation
     * [Azure Post Exploitation Techniques](https://azure.microsoft.com/en-in/blog/azure-post-exploitation-techniques/)
     * [Identifying & Exploiting Leaked Azure Storage Keys](https://www.notsosecure.com/identifying-exploiting-leaked-azure-storage-keys/)
@@ -55,3 +64,7 @@ folder: mydoc
 * [azucar](https://github.com/nccgroup/azucar): Security auditing tool for Azure environments
 * [cs-suite](https://github.com/SecurityFTW/cs-suite): One stop tool for auditing the security posture of AWS/GCP/Azure infrastructure.
 * [onedrive_user_enum](https://github.com/nyxgeek/onedrive_user_enum): enumerate valid onedrive users
+
+Defensive
+
+- [Azure Policy Compliance Scan](https://github.com/Azure/policy-compliance-scan): With the Azure Policy Compliance Scan action, you can now easily trigger a on demand scan from your GitHub workflow on one or multiple resources, resource groups or subscriptions, and continue/fail the workflow based on the compliance state of resources. 

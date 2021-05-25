@@ -23,6 +23,10 @@ folder: mydoc
 * [GCP OAuth Token Hijacking in Google Cloud – Part 1](https://www.netskope.com/blog/gcp-oauth-token-hijacking-in-google-cloud-part-1)
 * [GCP OAuth Token Hijacking in Google Cloud—Part 2](https://www.netskope.com/blog/gcp-oauth-token-hijacking-in-google-cloud-part-2)
 * [The Power of Kubernetes RBAC LIST](https://darkbit.io/blog/the-power-of-kubernetes-rbac-list)
+* [Security Logging in Cloud Environments - GCP](https://www.marcolancini.it/2021/blog-security-logging-cloud-environments-gcp/)
+* [Security checklist for cloud workload protection](https://www.paloaltonetworks.com/apps/pan/public/downloadResource?pagePath=/content/pan/en_US/resources/datasheets/prisma-cloud-native-security-checklist-ds)
+* [Exploiting weak configurations in Google Cloud Identity Platform](https://blog.appsecco.com/exploiting-weak-configurations-in-google-identity-platform-cbddbd0e71e3)
+* [How I Hacked Google App Engine: Anatomy of a Java Bytecode Exploit](https://blog.polybdenum.com/2021/05/05/how-i-hacked-google-app-engine-anatomy-of-a-java-bytecode-exploit.html)
 
 
 ## Tools
