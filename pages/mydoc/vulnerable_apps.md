@@ -47,6 +47,7 @@ folder: mydoc
 
 * [Simulator](https://github.com/google/kctf/tree/alpha) - A distributed systems and infrastructure simulator for attacking and debugging Kubernetes
 
+* [IAM Vulnerable](https://github.com/BishopFox/iam-vulnerable) - Deploys over 250 IAM resources in your account and supports around 31 privelege esclation paths.
   
 
   
