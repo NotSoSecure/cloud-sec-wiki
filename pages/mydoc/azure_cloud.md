@@ -52,10 +52,22 @@ folder: mydoc
 * Post Exploitation
     * [Azure Post Exploitation Techniques](https://azure.microsoft.com/en-in/blog/azure-post-exploitation-techniques/)
     * [Identifying & Exploiting Leaked Azure Storage Keys](https://www.notsosecure.com/identifying-exploiting-leaked-azure-storage-keys/)
+* [NETSPI's Cloud Pentesting Blogs](https://www.netspi.com/blog/technical/cloud-penetration-testing/)
+* [Getting Started in Pentesting the Azure Cloud](https://www.blackhillsinfosec.com/webcast-getting-started-in-pentesting-the-cloud-azure/)
+* [Azure Skeleton Key: Exploiting Pass-Through Auth to Steal Credentials](https://www.varonis.com/blog/azure-skeleton-key/)
+* [Azure AD Seamless SSO allows enumerating tenant users](https://o365blog.com/post/desktopsso/)
+* Attacking and Defending the Microsoft Cloud (Office 365 & Azure AD) - Sean Metcalf and Mark Morowczynski -> [Video](https://youtu.be/SG2ibjuzRJM) & [Slides](https://www.blackhat.com/us-19/briefings/schedule/#attacking-and-defending-the-microsoft-cloud-office---azure-ad-14553)
+* [An Introduction to Azure Offensive Security with David Okeyode](https://youtu.be/7U102o53NaA)
+* [DYI Azure Security Assesment - DEF CON 27 Cloud Village](https://youtu.be/tJc_CNQMh5k)
+* [Azure Security Meetup Adventures in Azure Privilege Escalation By Karl Fosaaen](https://youtu.be/_BWD7767DvM)
+* [Adventures in Azure Privilege Escalation Karl Fosaaen](https://youtu.be/EYtw-XPml0w)
+* [Karl Fosaaen - Attacking Azure Environments with PowerShell - BSides Portland 2018](https://youtu.be/AWhag2K3AS8)
+* [Attacking Azure Environments with PowerShell Karl Fosaaen](https://youtu.be/IdORwgxDpkw)
 
 ## Books
 
 * [Pentesting Azure Applications: The Definitive Guide to Testing and Securing Deployments](https://www.amazon.in/Pentesting-Azure-Applications-Definitive-Deployments-ebook/dp/B072SS34CP/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1536010588&sr=8-1)
+* [Penetration Testing Azure for Ethical Hackers](https://www.packtpub.com/product/penetration-testing-azure-for-ethical-hackers/9781839212932)
 
 ## Tools
 
@@ -64,7 +76,10 @@ folder: mydoc
 * [azucar](https://github.com/nccgroup/azucar): Security auditing tool for Azure environments
 * [cs-suite](https://github.com/SecurityFTW/cs-suite): One stop tool for auditing the security posture of AWS/GCP/Azure infrastructure.
 * [onedrive_user_enum](https://github.com/nyxgeek/onedrive_user_enum): enumerate valid onedrive users
+* [MicroBurst](https://github.com/NetSPI/MicroBurst): MicroBurst includes functions and scripts that support Azure Services discovery, weak configuration auditing, and post exploitation actions such as credential dumping. It is intended to be used during penetration tests where Azure is in use. 
+* [ROADtools](https://github.com/dirkjanm/ROADtools): ROADtools is a framework to interact with Azure AD. It currently consists of a library (roadlib) and the ROADrecon Azure AD exploration tool.
+* [AzureADRecon](https://github.com/adrecon/AzureADRecon): AzureADRecon is a tool which extracts and combines various artefacts like Tenant, Users, Licenses, ServicePrincipals, etc. out of an Azure AD environment with a valid credential.
 
-Defensive
+### Defensive
 
 - [Azure Policy Compliance Scan](https://github.com/Azure/policy-compliance-scan): With the Azure Policy Compliance Scan action, you can now easily trigger a on demand scan from your GitHub workflow on one or multiple resources, resource groups or subscriptions, and continue/fail the workflow based on the compliance state of resources. 
