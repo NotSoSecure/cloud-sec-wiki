@@ -57,6 +57,12 @@ folder: mydoc
 * [Azure Skeleton Key: Exploiting Pass-Through Auth to Steal Credentials](https://www.varonis.com/blog/azure-skeleton-key/)
 * [Azure AD Seamless SSO allows enumerating tenant users](https://o365blog.com/post/desktopsso/)
 * Attacking and Defending the Microsoft Cloud (Office 365 & Azure AD) - Sean Metcalf and Mark Morowczynski -> [Video](https://youtu.be/SG2ibjuzRJM) & [Slides](https://www.blackhat.com/us-19/briefings/schedule/#attacking-and-defending-the-microsoft-cloud-office---azure-ad-14553)
+* [An Introduction to Azure Offensive Security with David Okeyode](https://youtu.be/7U102o53NaA)
+* [DYI Azure Security Assesment - DEF CON 27 Cloud Village](https://youtu.be/tJc_CNQMh5k)
+* [Azure Security Meetup Adventures in Azure Privilege Escalation By Karl Fosaaen](https://youtu.be/_BWD7767DvM)
+* [Adventures in Azure Privilege Escalation Karl Fosaaen](https://youtu.be/EYtw-XPml0w)
+* [Karl Fosaaen - Attacking Azure Environments with PowerShell - BSides Portland 2018](https://youtu.be/AWhag2K3AS8)
+* [Attacking Azure Environments with PowerShell Karl Fosaaen](https://youtu.be/IdORwgxDpkw)
 
 ## Books
 
